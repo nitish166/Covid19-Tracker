@@ -81,9 +81,6 @@ function App() {
               onChange={onCountryChange}
               value={country}
             >
-              {/* Loop through all the countries 
-                    and show a drop down list
-                    of the options */}
               <MenuItem value="worldwide">Worldwide</MenuItem>
               {countries.map((country) => (
                 <MenuItem value={country.value}>{country.name}</MenuItem>
@@ -91,8 +88,6 @@ function App() {
             </Select>
           </FormControl>
         </div>
-
-        {/* Title + Select input dropdown field */}
         <div className="app_stats">
           <InfoBox
             isRed
@@ -118,12 +113,6 @@ function App() {
             total={prettyPrintStat(countryInfo.deaths)}
           />
         </div>
-
-        {/* Table */}
-        {/* Graph */}
-
-        {/* Map */}
-        {/*  */}
         <Map
           casesType={casesType}
           countries={mapCountries}
