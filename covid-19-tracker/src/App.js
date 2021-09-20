@@ -113,6 +113,12 @@ function App() {
             total={prettyPrintStat(countryInfo.deaths)}
           />
         </div>
+
+        {/* Table */}
+        {/* Graph */}
+
+        {/* Map */}
+        {/*  */}
         <Map
           casesType={casesType}
           countries={mapCountries}
